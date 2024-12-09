@@ -1,0 +1,21 @@
+#login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  &:hover a {
+    color: #fff !important;
+  }
+}
+
+#signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#logOutBtn:hover a {
+  color: #fff;
+}
