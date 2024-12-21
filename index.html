@@ -22,13 +22,18 @@
             <h3>SMART</h3>
             <p>Your Gate To Smart Technology</p>
           </div>
-          <form>
-            <label for="userEmail-login">Useremail :</label>
-            <input type="text" class="form-control my-2" placeholder="Enter Your Useremail" id="userEmail-login">
-            <label for="userPassword-login">Password :</label>
-            <input type="password" class="form-control my-2" placeholder="Enter Your Password" id="userPassword-login">
+          <form id="logIn">
+            <!-- USEREMAIL -->
+            <label for="userEmailLogIn">Useremail :</label>
+            <input type="text" class="form-control my-2" placeholder="Enter Your Useremail" id="userEmailLogIn" autofocus>
+            <!-- USERPASSWORD -->
+            <label for="userPasswordLogIn">Password :</label>
+            <input type="password" class="form-control my-2" placeholder="Enter Your Password" id="userPasswordLogIn">
+            <div id="logInError" class="mb-2 p-0 text-danger d-none">Invalid email or password</div>
+            <!-- SIGN-UP LINK -->
             <p class="my-3">Don't have an account? <a href="./signup.html" target="_blank"> Create one now! </a></p>
-            <button type="button" class="btn btn-outline-primary w-25 mt-4" id="login-btn">LOGIN</button>
+            <!-- LOG-IN BUTTON -->
+            <button class="btn btn-outline-primary w-25 mt-4" id="logInBtn">LOGIN</button>
           </form>
         </div>
       </div>
@@ -38,6 +43,7 @@
 
 
   <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./JS/main.js"></script>
 </body>
 </html>

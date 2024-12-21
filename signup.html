@@ -22,14 +22,24 @@
             <h3>SMART</h3>
             <p>Your Gate To Smart Technology</p>
           </div>
-          <form>
-            <label for="userName-signup">UserName :</label>
-            <input type="text" class="form-control my-2" placeholder="Enter Your Username" id="userName-signup">
-            <label for="userEmailSignUp">UserEmail :</label>
-            <input type="email" class="form-control my-2" placeholder="Enter Your Email" id="userEmailSignUp">
-            <label for="userPassword-signup">Password :</label>
-            <input type="password" class="form-control my-2" placeholder="Enter Your Password" id="userPassword-signup">
-            <button type="button" class="btn btn-outline-primary w-25 mt-4" id="signup-btn">SIGNUP</button>
+          <form id="signUpForm">
+            <!-- USERNAME -->
+            <label for="userNameSignup">Username :</label>
+            <input type="text" class="form-control my-2 selectedInput" placeholder="Enter Your Username" id="userNameSignup" autofocus>
+            <div id="userNameSignupError" class="mb-2 p-0 text-danger d-none">You must type at least three characters</div>
+            <!-- USEREMAIL -->
+            <label for="userEmailSignUp">Useremail :</label>
+            <input type="text" class="form-control my-2 selectedInput" placeholder="Enter Your Email" id="userEmailSignUp">
+            <div id="userEmailSignUpExist" class="mb-2 p-0 text-danger d-none">Email already exists</div>
+            <div id="userEmailSignUpError" class="mb-2 p-0 text-danger d-none">It must be a valid email</div>
+            <!-- USERPASSWORD -->
+            <label for="userPasswordSignup">Password :</label>
+            <input type="password" class="form-control my-2 selectedInput" placeholder="Enter Your Password" id="userPasswordSignup">
+            <div id="userPasswordSignupError" class="mb-2 p-0 text-danger d-none">
+              You must enter at least 1 uppercase, 1 lowercase, 1 digit, and a special character
+            </div>
+            <!-- SIGN-UP BUTTON -->
+            <button class="btn btn-outline-primary w-25 mt-4" id="signupBtn">SIGNUP</button>
           </form>
         </div>
       </div>
@@ -39,6 +49,7 @@
 
 
   <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./JS/main.js"></script>
 </body>
 </html>
