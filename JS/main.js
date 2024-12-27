@@ -149,7 +149,7 @@ logInForm?.addEventListener('submit', function(e){
   }
 });
 
-if(localStorage.getItem("userName") != null){
+if((welcomeMessage) && (localStorage.getItem("userName")) != null){
   welcomeMessage.innerHTML +=localStorage.getItem("userName");
 };
 
